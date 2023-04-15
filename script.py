@@ -62,7 +62,7 @@ def job():
     for price_element in price_elements:
         price = price_element.text.strip()
         if price:
-            price = int(re.findall(r'\d+', price)[0])
+            price = int(re.sub(',', '', re.findall('[\d,]+', price)[0]))
             if price < BUDGET:
                 price_list.append(price)
                 print('Find a new price:', price, '!')
