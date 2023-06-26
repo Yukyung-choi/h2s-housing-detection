@@ -1,3 +1,6 @@
+# Here is another version for Student Experience.
+# This script is specific for studios in Leiden. If you want to use it for other cities (like Amsterdam), change the parameters.
+
 import requests
 from bs4 import BeautifulSoup
 import smtplib
